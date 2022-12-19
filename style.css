@@ -8,6 +8,7 @@ a{
     padding: 20px;
 }
 
+
 header{
     position: fixed;
     width: 100%;
@@ -72,4 +73,27 @@ header{
 }
 .text33-banner{
     color :darkorange;
+}
+
+.position-banner{
+    position: absolute;
+    color: black;
+    top: 300px;
+
+}
+
+.apply-button{
+    position: absolute;
+    background-color: orangered;
+    border-width: 1px;
+    top :350px;
+    left: 80px;
+    align-items: center;
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+ 
+.apply-text{
+
 }
