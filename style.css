@@ -34,8 +34,9 @@ header{
     top: 50px;
 }
 .backgroundTop-banner{
-    opacity: 0.2;
-    top :30px;
+    display: flex;
+    opacity: 0.3;
+    top :50px;
 }
 .text1-banner{
     position: absolute;
