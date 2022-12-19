@@ -34,7 +34,7 @@ header{
     top: 50px;
 }
 .backgroundTop-banner{
-    opacity: 0.5;
+    opacity: 0.2;
     top :30px;
 }
 .text1-banner{
@@ -52,7 +52,7 @@ header{
 .text2-banner{
     position: absolute;
     top : 230px;
-    left: 50px;
+    left: 100px;
     color: black;
 }
 
@@ -78,22 +78,17 @@ header{
 .position-banner{
     position: absolute;
     color: black;
-    top: 300px;
-
+    top: 310px;
+   left: 50px;
 }
 
 .apply-button{
     position: absolute;
+    border: 0px;
     background-color: orangered;
-    border-width: 1px;
-    top :350px;
+    top :370px;
     left: 80px;
-    align-items: center;
-    display: block;
     width: 120px;
     height: 60px;
 }
  
-.apply-text{
-
-}
