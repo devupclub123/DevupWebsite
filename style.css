@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.header-menu{
+    display: flex;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.logo-banner {
+    position: absolute;  
+    left :60px;
+    top: 50px;
+}
+.backgroundTop-banner{
+    opacity: 0.5;
+    top :30px;
+}
+.text1-banner{
+    position: absolute;
+    top : 200px;
+    left: 50px;
+    color: darkorange;
+    
+}
+
+.text11-banner{
+    color :blue;
+}
+
+.text2-banner{
+    position: absolute;
+    top : 230px;
+    left: 50px;
+    color: black;
+}
+
+.text3-banner{
+    position: absolute;
+    top : 270px;
+    left: 50px;
+    color: darkblue;
+}
+.text31-banner{
+    color :red;
+}
+.text32-banner{
+    color :blue;
+}
+.text33-banner{
+    color :darkgreen;
+}
+.text33-banner{
+    color :darkorange;
+}
