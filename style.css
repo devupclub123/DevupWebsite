@@ -1,3 +1,4 @@
+/* defaule css*/
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +9,8 @@ a{
     padding: 20px;
 }
 
-
+/*-------------------------------------------------------------*/
+/*header */
 header{
     position: fixed;
     width: 100%;
@@ -34,7 +36,7 @@ header{
     top: 50px;
 }
 .backgroundTop-banner{
-    background: url('./Picture/back.jpg') no-repeat top center / cover;
+    background: no-repeat top center / cover;
     display: flex;
     opacity: 0.3;
     top :50px;
@@ -93,4 +95,45 @@ header{
     width: 120px;
     height: 60px;
 }
- 
+/*-------------------------------------------------------------*/
+/* content paragraph 1*/
+.content-para-1{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.para-1-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+.para-1-right{
+   width: 50%;
+   left: 50%;
+}
+.text1-para1{
+    color: #db4437;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+.text1-para2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.visit-button{
+    border: 0px;
+    margin-top: 30px;
+    justify-items: center;
+    width: 150px;
+    display: inline-block;
+    background-color: orange;
+
+}
+/*============================================================*/
