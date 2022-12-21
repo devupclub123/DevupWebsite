@@ -6,7 +6,7 @@
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 #header a{
     color: white;
@@ -137,7 +137,7 @@ html {
 .content-para-1{
     margin-top: 50px;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .para-1-left{
     width: 50%;
@@ -173,4 +173,58 @@ html {
     background-color: orange;
 
 }
+/*============================================================*/
+
+/* Event    */
+#Event{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+}
+#Event .Event-title{
+    color: #db4437;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+#Event .Event-Recently{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+#Event .Event-Recently-Event{
+    position: absolute;
+    text-transform: uppercase ;
+    color: white;
+    font-size: 100px;
+    margin-left: 20px;
+    margin-top: -45px;
+}
+#Event-list{
+    display: flex;  
+    margin-top: 50px; 
+    font-size: 20px;
+}
+#Event .Event-website{
+    background-color: white;
+   width: 33%;
+}
+#Event .Event-website-title{
+    margin-top: 15px;
+}
+#Event .Event-YouthCode{  
+    width: 33%;
+    margin-left: 100px;
+ }
+#Event .Event-LearningSeries{
+    background-size: cover;
+    background-color: white;
+    width: 33%;
+    margin-left: -30px;
+    background-size: cover;
+ }
+ #Event .Event-LearningSeries-title{
+    margin-top: 15px;
+ }
 /*============================================================*/
