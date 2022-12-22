@@ -6,7 +6,6 @@
 }
 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 #header a{
     color: white;
@@ -230,12 +229,16 @@ html {
     background-color: white;
    width: 33%;
 }
-#Event .Event-website-title{
+#Event .Event-website-title ,#Event  a{
     margin-top: 15px;
+    color: black;
 }
 #Event .Event-YouthCode{  
     width: 33%;
     margin-left: 100px;
+ }
+#Event .Event-YouthCode-title ,#Event a{  
+   color: black;
  }
 #Event .Event-LearningSeries{
     background-size: cover;
@@ -244,8 +247,9 @@ html {
     margin-left: -30px;
     background-size: cover;
  }
- #Event .Event-LearningSeries-title{
+ #Event .Event-LearningSeries-title ,#Event a{
     margin-top: 15px;
+    color: black;
  }
 /*============================================================*/
 /* định dạng thẻ div chưa các button tab */
@@ -353,15 +357,13 @@ html {
     display: flex;
     justify-content: space-around;
 }
-.nav__menu{
+.nav__menu, .nav__menu a{
     right: 0;
     display: flex;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size:medium;
     margin-top: 10px;
-
-  
 }
 
 .nav__menu *:hover{
