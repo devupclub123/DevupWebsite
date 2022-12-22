@@ -134,52 +134,72 @@ html {
 }
 /*-------------------------------------------------------------*/
 /* content paragraph 1*/
-.content-para-1{
-    margin-top: 50px;
+/*Join the community*/
+#community{
+    background-color: rgb(255, 255, 255);;
+    margin: 50px;
     display: flex;
-    margin-bottom: 150px;
 }
-.para-1-left{
+
+#community .left{
     width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    line-height: 50px;
-    margin-left: 50px;
+    /* height: 400px; */
+    line-height: 40px;
 }
-.para-1-right{
+
+#community .right{
    width: 50%;
    left: 50%;
 }
-.text1-para1{
-    color: #db4437;
+
+#community .para1{
+    color: orangered;
     letter-spacing: 1px;
     font-size: 16px;
     text-transform: uppercase;
     display: block;
+    font-weight: 800;
 }
-.text1-para2{
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-.visit-button{
-    border: 0px;
-    margin-top: 30px;
-    justify-items: center;
-    width: 150px;
-    display: inline-block;
-    background-color: orange;
 
+#community .para2{
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+#community .para3 {
+    line-height: 48px;
+}
+
+#community .visit-button{
+    border: 0px;
+    margin-top: 16px;
+    justify-items: center;
+    width: 30%;
+    display: inline-block;
+    background-color: orangered;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#community .visit-button a {
+    color: white;
+}
+
+#community .visit-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
 }
 /*============================================================*/
 
-/* Event    */
+/* Event*/
 #Event{
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 200px;
+    margin:  100px 50px 200px 50px;
 }
 #Event .Event-title{
     color: #db4437;
@@ -196,7 +216,7 @@ html {
 #Event .Event-Recently-Event{
     position: absolute;
     text-transform: uppercase ;
-    color: white;
+    color: orangered;
     font-size: 100px;
     margin-left: 20px;
     margin-top: -45px;
