@@ -341,3 +341,80 @@ html {
 }
 /*============================================================*/
 /*============================================================*/
+
+
+
+/*============================RECRUITMENT====================================*/
+
+.navigation{
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-around;
+}
+.nav__menu{
+    right: 0;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:medium;
+    margin-top: 10px;
+
+  
+}
+
+.nav__menu *:hover{
+    color: rgb(248, 102, 23);
+}
+
+.nav__img{
+    padding-left: 20px;
+    display: flex;
+}
+
+.nav__imgname{
+    padding: 0px 190px 0px 0px;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+img.nav__img{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    float: left;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Picture/2background.jpg);
+    width: 100%;
+    height: 533px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+
+section .box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: .78;
+}
+
+section .box{
+    text-align: center;
+}
