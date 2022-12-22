@@ -248,3 +248,96 @@ html {
     margin-top: 15px;
  }
 /*============================================================*/
+/* định dạng thẻ div chưa các button tab */
+#function{
+    margin:  100px 50px 200px 50px;
+}
+#function .function-content-plan{
+    color: #db4437;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+}
+#function .function-content-function {
+    letter-spacing: 1px;
+    font-size: 32px;
+    display: block;
+    font-weight: 800;
+}
+#function .function-content-function2{
+    letter-spacing: 1px;
+    font-size: 32px;
+    display: block;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+#function .function-tab{
+    display: flex;
+    height: 100px;
+}
+ /* định dạng các button tab */
+#function #function-tab1{
+    background-color: lightskyblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+#function #function-tab2{
+    background-color: lightsalmon;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+#function #function-tab3{
+    background-color: gold;
+    color: black;
+    text-transform: uppercase;
+    width: 20%;
+}
+#function #function-tab4{
+    background-color: lightgreen;
+    color: black;
+    text-transform: uppercase;
+    width: 20%;
+}
+#function #function-tab5{
+    background-color: blueviolet;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+/* đổi màu khi một button tab được hover va active*/
+#function #function-tab1:hover ,#function #function-tab1:focus,#function #function-tab1.active {
+    background-color: darkblue;
+    color: white;
+}
+#function #function-tab2:hover ,#function #function-tab2:focus, #function #function-tab2.active{
+    background-color: red;
+    color: white;
+}
+#function #function-tab3:hover ,#function #function-tab3:focus, #function #function-tab3.active{
+    background-color: orange;
+    color: white;
+}
+#function #function-tab4:hover ,#function #function-tab4:focus, #function #function-tab4.active{
+    background-color: darkgreen;
+    color: white;
+}
+#function #function-tab5:hover ,#function #function-tab5:focus ,#function #function-tab5.active{
+    background-color: darkblue;
+    color: white;
+   
+}
+ 
+/* định dạng nội dung hiển thị */
+#function .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid red;
+    border-top: none;
+}
+/*============================================================*/
+/*============================================================*/

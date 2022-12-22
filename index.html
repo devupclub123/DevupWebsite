@@ -95,6 +95,94 @@
                 </div>
            </div>
          </div>
+<!-- ------------------------------------------------------------------------------------>
+<div id="function"> 
+    <div id="function-content">
+        <h2 class="function-content-plan">Recruitment plan</h2>
+        <h2 class="function-content-function">DevUp-FUQN's Function</h2>
+        <h2 class="function-content-function2">We're looking for...</h2>
+    </div>
+    <div class="function-tab">
+        <button id ="function-tab1" class="tablinks active">Development</button>
+        <button id ="function-tab2" class="tablinks">external relation</button>
+        <button id ="function-tab3" class="tablinks">marketing</button>
+        <button id ="function-tab4" class="tablinks">event operation</button>
+        <button id ="function-tab5" class="tablinks">fessior solution</button>
+    </div>
+   
+    <div id="Development" class="tabcontent">
+        <h3>PHP</h3>
+        <p>
+            PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+            trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+            dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+            thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
+        </p>
+    </div>
+   
+    <div id="external relation" class="tabcontent">
+        <h3>HTML</h3>
+        <p>
+            HTML là chữ viết tắt của cụm từ HyperText Markup Language((Xem thêm tại 
+            http://vi.wikipedia.org/wiki/HTML)) (dịch là Ngôn ngữ đánh dấu siêu văn bản)
+            được sử dụng để tạo một trang web, trên một website có thể sẽ chứa nhiều trang
+            và mỗi trang được quy ra là một tài liệu HTML.
+        </p> 
+    </div>
+   
+    <div id="marketing" class="tabcontent">
+        <h3>CSS</h3>
+        <p>
+            CSS là chữ viết tắt của Cascading Style Sheets, nó là một ngôn ngữ được sử dụng để
+            tìm và định dạng lại các phần tử được tạo ra bởi các ngôn ngữ đánh dấu (ví dụ như HTML).
+        </p>
+    </div>
+    <div id="event operation" class="tabcontent">
+            <h3>PHP 2</h3>
+            <p>
+                PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+                trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+                dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+                thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
+            </p>
+        </div>
+    <div id="fessior solution" class="tabcontent">
+        <h3>PHP 3</h3>
+        <p>
+            PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+            trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+            dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+            thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
+        </p>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------------------>
 
+<!-- ------------------------------------------------------------------------------------>
     </body>
+<!-- ------------------------------------------------------------------------------------>
+<!-- tao hieu ung tab khi nhan vao (copy tren mang chu t cũng chua hieu doan nay :((  )-->
+<script type="text/javascript">
+    var buttons = document.getElementsByClassName('tablinks');
+    var contents = document.getElementsByClassName('tabcontent');
+    function showContent(id){
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        var content = document.getElementById(id);
+        content.style.display = 'block';
+    }
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            var id = this.textContent;
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            {this.className += " active";        }
+            showContent(id);
+        });
+    }
+    showContent('Development');
+</script>
+<!-- ------------------------------------------------------------------------------------>
 </html>
