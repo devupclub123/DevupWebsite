@@ -96,6 +96,7 @@ html {
     position: relative;
     color: darkblue;
     font-weight: 1000;
+    text-transform: uppercase;
 }
 #banner .text31-banner{
     color :red;
@@ -340,10 +341,37 @@ html {
 #function .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-top: none;
+    background-color: whitesmoke;
 }
 /*============================================================*/
+#Development .Development-content1, .Development-content2,.Development-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+.externalRelation-content1, .externalRelation-content2,.externalRelation-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+
+ #marketing-content .marketing-content1, .marketing-content2,.marketing-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ .eventOperation-content{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ .fessiorSolution-content{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
 /*============================================================*/
 
 
