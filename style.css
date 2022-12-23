@@ -6,7 +6,6 @@
 }
 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 #header a{
     color: white;
@@ -97,6 +96,7 @@ html {
     position: relative;
     color: darkblue;
     font-weight: 1000;
+    text-transform: uppercase;
 }
 #banner .text31-banner{
     color :red;
@@ -230,12 +230,16 @@ html {
     background-color: white;
    width: 33%;
 }
-#Event .Event-website-title{
+#Event .Event-website-title ,#Event  a{
     margin-top: 15px;
+    color: black;
 }
 #Event .Event-YouthCode{  
     width: 33%;
     margin-left: 100px;
+ }
+#Event .Event-YouthCode-title ,#Event a{  
+   color: black;
  }
 #Event .Event-LearningSeries{
     background-size: cover;
@@ -244,8 +248,9 @@ html {
     margin-left: -30px;
     background-size: cover;
  }
- #Event .Event-LearningSeries-title{
+ #Event .Event-LearningSeries-title ,#Event a{
     margin-top: 15px;
+    color: black;
  }
 /*============================================================*/
 /* định dạng thẻ div chưa các button tab */
@@ -336,10 +341,37 @@ html {
 #function .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-top: none;
+    background-color: whitesmoke;
 }
 /*============================================================*/
+#Development .Development-content1, .Development-content2,.Development-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+.externalRelation-content1, .externalRelation-content2,.externalRelation-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+
+ #marketing-content .marketing-content1, .marketing-content2,.marketing-content3{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ .eventOperation-content{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ .fessiorSolution-content{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
 /*============================================================*/
 
 
@@ -353,13 +385,17 @@ html {
     display: flex;
     justify-content: space-around;
 }
-.nav__menu{
+.nav__menu, .nav__menu a{
     right: 0;
     display: flex;
     color: white ;
     font-family: 'Montserrat', sans-serif;
     font-size:medium;
+<<<<<<< HEAD
     
+=======
+    margin-top: 10px;
+>>>>>>> 44e5216315500e3f85333f289235c4d15f698b43
 }
 
 
@@ -393,7 +429,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/Picture/2background.jpg);
+    background: url(./Picture/2background.jpg);
     width: 100%;
     height: 533px;
     background-size: cover;
