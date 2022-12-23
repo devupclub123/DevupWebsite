@@ -356,13 +356,13 @@ html {
 .nav__menu{
     right: 0;
     display: flex;
-    color: white;
+    color: white ;
     font-family: 'Montserrat', sans-serif;
     font-size:medium;
-    margin-top: 10px;
-
-  
+    
 }
+
+
 
 .nav__menu *:hover{
     color: rgb(248, 102, 23);
@@ -417,4 +417,11 @@ section .box::before {
 
 section .box{
     text-align: center;
+}
+
+#nav__a {
+    color: white;
+    margin-top: 27px;
+    margin-right: 30px;
+
 }
