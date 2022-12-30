@@ -22,6 +22,7 @@ html {
 
 #header{
     display: flex;
+    width: 100%;
     background-color: rgb(255, 255, 255);;
     justify-content: space-between;
     align-items: center;
@@ -413,14 +414,16 @@ html {
 /*============================================================*/
 /*Footer*/
 #Footer {
+  position: relative;
   display: flex;
   bottom: 0px;
-  width: 100%;
+  width: 100% ;
   height: 300px;
   background-color: #1a1a1a;
   color: white;
 }
 #Logo-Slogan {
+ position: absolute;
  margin-left: 100px;
  padding-right: 400px;
  font-size: 16px;
@@ -437,12 +440,16 @@ html {
    color: white;
 }
 #Contact-infor{
+    position: absolute;
     margin-top: 50px;
     margin-left: 20px;
+    right: 150px;
 }
 #Follow-infor{
+    position: absolute;
     margin-left:50px;
     margin-top: 50px;
+    right: 50px;
 }
 /*============================================================*/
 
