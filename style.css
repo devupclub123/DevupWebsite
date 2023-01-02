@@ -29,10 +29,21 @@ html {
     background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 80px;
     z-index: 3;
+    top: 0px;
 }
-
+#header .header__imgname{
+    display: flex;
+    margin-left: 50px;
+    padding: 0px 190px 0px 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+#header .header_title{
+    margin-top: 10px;
+}
 #header li {
     display: inline-block;
 }
@@ -57,8 +68,8 @@ html {
     height: 570px;
     position: relative;
     padding: 50px 0px 0px 0px;
-    margin: 0px 0px 20px 0px;
-    background: url('./Picture/back.jpg') no-repeat top center / cover;
+    margin: 80px 0px 20px 0px;
+    background: url('./Picture/back.jpg') no-repeat top center / cover ;
 }
 
 #banner .banner-content {
@@ -253,6 +264,9 @@ html {
     margin-top: 15px;
     color: black;
  }
+ #Event .Event-YouthCode:hover ,#Event .Event-website:hover,#Event .Event-LearningSeries:hover {
+    width: 45%;
+ }
 /*============================================================*/
 /* định dạng thẻ div chưa các button tab */
 #function{
@@ -337,7 +351,6 @@ html {
     color: white;
    
 }
- 
 /* định dạng nội dung hiển thị */
 #function .tabcontent {
     display: none;
@@ -358,7 +371,7 @@ html {
     margin-top: 5px;
  }
 
- #marketing-content .marketing-content1, .marketing-content2,.marketing-content3{
+.marketing-content1, .marketing-content2,.marketing-content3{
     background-color:rgb(255, 255, 255);
     margin-bottom: 10px;
     margin-top: 5px;
@@ -373,6 +386,10 @@ html {
     margin-bottom: 10px;
     margin-top: 5px;
  }
+ #Development .Development-content1 ,.externalRelation-content1 ,.marketing-content1,.eventOperation-content,
+.fessiorSolution-content{
+    margin-top: 20px;
+}
 /*============================================================*/
 /* Sponsors */
 #Sponsors{
@@ -424,16 +441,15 @@ html {
 }
 #Logo-Slogan {
  position: absolute;
- margin-left: 100px;
+ margin-left: 50px;
  padding-right: 400px;
  font-size: 16px;
 }
 #Logo-Slogan .Logo-img{
-    width: 30%;
-    height: 100px;
+    width: 60px;
+    height: 80px;
 }
 #mail-input {
-    margin-left: -50px;
     margin-top: 20px;
 }
 #mail-input .subcribe-mail{
