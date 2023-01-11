@@ -2,85 +2,187 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>FPT QN DEVUP WEBSITE</title>
+        <title>FPT QN DEVUP WEBSITE </title>
         <link rel="stylesheet" type="text/css" href="style.css">  
         <style type="text/css">
             body
             {  
-                background-color: whitesmoke;
+                background-color: rgb(255, 255, 255);;
                 font-family: Arial, Helvetica, sans-serif;
             }
         </style>
     </head>
 
     <body>
-   <header>
-    <div class="header-main ">
-        <h1 class="site-title"><a href="" rel="home"> DEVUP CLUB WEBSITE </a></h1>
-        <ul class="header-menu">
-             <li> <a href="">Home </a> </li>
-             <li> <a href="">Recruitment  </a> </li>
-             <li> <a href="">Contact </a> </li>
-             <li> <a href="">About us</a> </li>
-        </ul>
-   </header>
-    <div style="height: 650px;">
-        <img class ="backgroundTop-banner" src="./Picture/background.jpg" alt="" width="100%" height="500">
-        
-        <div>
-        <img class="logo-banner" src="./Picture/logoDevup-chinh.png" width="150" height="150" >
-        <p class = "text1-banner">Are you <span class="text11-banner">ready</span> to join us?<p>
-        <h1 class="text2-banner">DevUp Club</h1>
-        <h1 class="text3-banner">FPT ResFes  
-        <span class="text31-banner">2</span>
-        <span class="text32-banner">0</span>
-        <span class="text33-banner">2</span>
-        <span class="text34-banner">2</span>
-        </h1>
-         <h5 class="position-banner">
-         <img src="./Picture/position.jpg" alt="position_icon" width="20" height="20">
-         FPT AI QUY NHON UNIVERSITY
-        </h5>
-        <button class="apply-button">
-            <a href="https://www.google.com/"> <h3 class="apply-text">Apply here</h3></a>
-        </button>
-       
+        <div id = "main">
+            <div id = "header">
+                <h2 class="site-title"><a href="" rel="home"> DEVUP CLUB</a></h2>
+                <ul class="header-menu">
+                    <li> <a href="">Home</a> </li>
+                    <li> <a href="">Recruitment</a> </li>
+                    <li> <a href="">Contact</a> </li>
+                    <li> <a href="./about.html">About us</a> </li>
+                </ul>
+            
+            </div>
+            
+            <div id = "banner">
+                
+                <div class="banner-content">
+                    <img class="logo-banner" src="./Picture/logoDevup-chinh.png" width="200" height="200" >
+                    <p class = "text1-banner">Are you <span class="text11-banner">ready</span> to join us?<p>
+                    <h1 class="text2-banner">DevUp Club</h1>
+                    <h1 class="text3-banner">FPT ResFes  
+                        <span class="text31-banner">2</span>
+                        <span class="text32-banner">0</span>
+                        <span class="text33-banner">2</span>
+                        <span class="text34-banner">2</span>
+                    </h1>
+
+                    <h4 class="position-banner">
+                    <img src="./Picture/position.jpg" alt="position_icon" width="20" height="20">
+                    FPT AI QUY NHON UNIVERSITY
+                    </h4>
+                
+                    <button class="apply-button">
+                        <a style="text-decoration: none" href="https://www.google.com/"> <h3 class="apply-text">Apply here</h3></a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------------------->
+        <br><br><br>
+        <div id ="community">
+            <div class="left">
+                <p class="para1">Join the community</p>
+                <p class="para2">We help students gain more Knowledge-Experience through practice</p>
+                <p  class="para3">DevUp club is a university club base on students who are interested in programming
+                        ,develope technologies.................................................................
+                        DevUp club is a university club base on students who are interested in programming
+                        ,develope technologies.................................................................
+                </p>
+                <button class="visit-button">
+                    <a href="https://www.google.com/"> Visit our page here</a>
+                </button>
+            </div>
+            <div class="right">
+                <img src="./Picture/background.jpg" alt="" width="100%", height="100%">
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------------------------>
+         <div id="Event">
+
+           <div class="Event-content">
+            <h2 class="Event-title">projects and events</h2>
+            <h2 class="Event-Recently">Recently
+                <span class="Event-Recently-Event"> Events</span>
+            </h2>
+           </div>
+
+           <div id="Event-list">
+                <div class="Event-website">
+                 <img src="./Picture/Event_website.jpg" alt="" width="100%">
+                 <p class="Event-website-title"> <a href=""> DevUp website project</a></p>
+                </div>
+                <div class="Event-YouthCode">
+                 <img src="./Picture/Event_Youthcode.png" alt="" width="60%">
+                 <p> <a href=""> YouthCode chanllenge</a></p>
+                </div>
+                <div class="Event-LearningSeries">
+                <img src="./Picture/Event_learning.jpg" alt="" width="100%">
+                <p class="Event-LearningSeries-title"><a href="">LearningSeries </a> </p>
+                </div>
+           </div>
+         </div>
+<!-- ------------------------------------------------------------------------------------>
+<div id="function"> 
+    <div id="function-content">
+        <h2 class="function-content-plan">Recruitment plan</h2>
+        <h2 class="function-content-function">DevUp-FUQN's Function</h2>
+        <h2 class="function-content-function2">We're looking for...</h2>
     </div>
-    </div>  
-
-    <div>
+    <div class="function-tab">
+        <button id ="function-tab1" class="tablinks active">Development</button>
+        <button id ="function-tab2" class="tablinks">external relation</button>
+        <button id ="function-tab3" class="tablinks">marketing</button>
+        <button id ="function-tab4" class="tablinks">event operation</button>
+        <button id ="function-tab5" class="tablinks">fessior solution</button>
+    </div>
+   
+    <div id="Development" class="tabcontent">
+        <h3>PHP</h3>
         <p>
-            Theo Goal, các cầu thủ Argentina ăn mừng chức vô địch trong phòng thay đồ bằng khẩu hiệu: 
-            “Một phút mặc niệm cho Mbappe”.
-
-            Câu chuyện gây sốc của Messi và các đồng đội có lẽ bắt nguồn từ phát biểu hồi tháng 5 của Mbappe. 
-            “Các đội tuyển Nam Mỹ gặp bất lợi vì không có được sự cạnh tranh như các đội châu Âu. Argentina và Brazil
-            không chơi những trận đấu ở đẳng cấp cao thường xuyên để giành quyền dự World Cup”, Mbappe nói.   
-        </p>
-        <p>
-            Theo Goal, các cầu thủ Argentina ăn mừng chức vô địch trong phòng thay đồ bằng khẩu hiệu: 
-            “Một phút mặc niệm cho Mbappe”.
-
-            Câu chuyện gây sốc của Messi và các đồng đội có lẽ bắt nguồn từ phát biểu hồi tháng 5 của Mbappe. 
-            “Các đội tuyển Nam Mỹ gặp bất lợi vì không có được sự cạnh tranh như các đội châu Âu. Argentina và Brazil
-            không chơi những trận đấu ở đẳng cấp cao thường xuyên để giành quyền dự World Cup”, Mbappe nói.   
-        </p>
-        <p>
-            Theo Goal, các cầu thủ Argentina ăn mừng chức vô địch trong phòng thay đồ bằng khẩu hiệu: 
-            “Một phút mặc niệm cho Mbappe”.
-
-            Câu chuyện gây sốc của Messi và các đồng đội có lẽ bắt nguồn từ phát biểu hồi tháng 5 của Mbappe. 
-            “Các đội tuyển Nam Mỹ gặp bất lợi vì không có được sự cạnh tranh như các đội châu Âu. Argentina và Brazil
-            không chơi những trận đấu ở đẳng cấp cao thường xuyên để giành quyền dự World Cup”, Mbappe nói.   
-        </p>
-        <p>
-            Theo Goal, các cầu thủ Argentina ăn mừng chức vô địch trong phòng thay đồ bằng khẩu hiệu: 
-            “Một phút mặc niệm cho Mbappe”.
-
-            Câu chuyện gây sốc của Messi và các đồng đội có lẽ bắt nguồn từ phát biểu hồi tháng 5 của Mbappe. 
-            “Các đội tuyển Nam Mỹ gặp bất lợi vì không có được sự cạnh tranh như các đội châu Âu. Argentina và Brazil
-            không chơi những trận đấu ở đẳng cấp cao thường xuyên để giành quyền dự World Cup”, Mbappe nói.   
+            PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+            trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+            dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+            thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
         </p>
     </div>
+   
+    <div id="external relation" class="tabcontent">
+        <h3>HTML</h3>
+        <p>
+            HTML là chữ viết tắt của cụm từ HyperText Markup Language((Xem thêm tại 
+            http://vi.wikipedia.org/wiki/HTML)) (dịch là Ngôn ngữ đánh dấu siêu văn bản)
+            được sử dụng để tạo một trang web, trên một website có thể sẽ chứa nhiều trang
+            và mỗi trang được quy ra là một tài liệu HTML.
+        </p> 
+    </div>
+   
+    <div id="marketing" class="tabcontent">
+        <h3>CSS</h3>
+        <p>
+            CSS là chữ viết tắt của Cascading Style Sheets, nó là một ngôn ngữ được sử dụng để
+            tìm và định dạng lại các phần tử được tạo ra bởi các ngôn ngữ đánh dấu (ví dụ như HTML).
+        </p>
+    </div>
+    <div id="event operation" class="tabcontent">
+            <h3>PHP 2</h3>
+            <p>
+                PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+                trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+                dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+                thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
+            </p>
+        </div>
+    <div id="fessior solution" class="tabcontent">
+        <h3>PHP 3</h3>
+        <p>
+            PHP (viết tắt hồi quy "PHP: Hypertext Preprocessor") là một ngôn ngữ lập 
+            trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng
+            dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất
+            thích hợp với web và có thể dễ dàng nhúng vào trang HTML..
+        </p>
+    </div>
+</div>
+<!-- ------------------------------------------------------------------------------------>
+
+<!-- ------------------------------------------------------------------------------------>
     </body>
+<!-- ------------------------------------------------------------------------------------>
+<!-- tao hieu ung tab khi nhan vao (copy tren mang chu t cũng chua hieu doan nay :((  )-->
+<script type="text/javascript">
+    var buttons = document.getElementsByClassName('tablinks');
+    var contents = document.getElementsByClassName('tabcontent');
+    function showContent(id){
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        var content = document.getElementById(id);
+        content.style.display = 'block';
+    }
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            var id = this.textContent;
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            {this.className += " active";        }
+            showContent(id);
+        });
+    }
+    showContent('Development');
+</script>
+<!-- ------------------------------------------------------------------------------------>
 </html>

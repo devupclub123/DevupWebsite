@@ -1,100 +1,343 @@
+/* defaule css*/
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#header a{
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px 20px;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 
-header{
+#header{
+    display: flex;
+    background-color: rgb(255, 255, 255);;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
+    height: 50px;
     z-index: 3;
 }
 
-.header-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
+#header li {
+    display: inline-block;
 }
 
-.header-menu{
-    display: flex;
+#header .header-menu{
+    display: block;
     text-transform: uppercase;
     padding: 10px 20px;
+    list-style-type: none;
+    font-weight: bolder;
 }
 
-.logo-banner {
-    position: absolute;  
-    left :60px;
-    top: 50px;
+#header .header-menu a:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
 }
-.backgroundTop-banner{
-    object-fit: contain;
+
+
+#banner {
     width: 100%;
-    height: 100%;
-
-   
-    opacity: 0.3;
-    top :50px;
-
-}
-.text1-banner{
-    position: absolute;
-    top : 200px;
-    left: 50px;
-    color: darkorange;
-    
+    height: 570px;
+    position: relative;
+    padding: 50px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+    background: url('./Picture/back.jpg') no-repeat top center / cover;
 }
 
-.text11-banner{
+#banner .banner-content {
+    position: relative;
+    width: 40%;
+    height: calc(100% - 50px);
+    margin: 20px 0px 20px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#banner .logo-banner {
+    position: relative; 
+}
+
+
+#banner .text1-banner{
+    position: relative;
+    color: orangered; 
+    font-size: medium; 
+    font-weight: 800;
+}
+
+#banner .text11-banner{
     color :blue;
 }
 
-.text2-banner{
-    position: absolute;
-    top : 230px;
-    left: 100px;
-    color: black;
+#banner .text2-banner{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
 }
 
-.text3-banner{
-    position: absolute;
-    top : 270px;
-    left: 50px;
+#banner .text3-banner{
+    position: relative;
     color: darkblue;
+    font-weight: 1000;
 }
-.text31-banner{
+#banner .text31-banner{
     color :red;
 }
-.text32-banner{
-    color :blue;
+#banner .text32-banner{
+    color :rgb(3, 3, 219);
 }
-.text33-banner{
-    color :darkgreen;
+#banner .text34-banner{
+    color :rgb(1, 166, 1);
 }
-.text33-banner{
-    color :darkorange;
-}
-
-.position-banner{
-    position: absolute;
-    color: black;
-    top: 310px;
-   left: 50px;
+#banner .text33-banner{
+    color :rgb(251, 140, 4);
 }
 
-.apply-button{
-    position: absolute;
+#banner .position-banner{
+    position: relative;
+    color: orangered;
+}
+
+#banner .apply-button{
+    position: relative;
     border: 0px;
     background-color: orangered;
-    top :370px;
-    left: 80px;
     width: 120px;
     height: 60px;
 }
+
+#banner .apply-text {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#banner .apply-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*-------------------------------------------------------------*/
+/*Join the community*/
+#community{
+    background-color: rgb(255, 255, 255);;
+    margin: 50px;
+    display: flex;
+}
+
+#community .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 400px; */
+    line-height: 40px;
+}
+
+#community .right{
+   width: 50%;
+   left: 50%;
+}
+
+#community .para1{
+    color: orangered;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+}
+
+#community .para2{
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+#community .para3 {
+    line-height: 48px;
+}
+
+#community .visit-button{
+    border: 0px;
+    margin-top: 16px;
+    justify-items: center;
+    width: 30%;
+    display: inline-block;
+    background-color: orangered;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#community .visit-button a {
+    color: white;
+}
+
+#community .visit-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*============================================================*/
+
+/* Event*/
+#Event{
+    margin:  100px 50px 200px 50px;
+}
+#Event .Event-title{
+    color: #db4437;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+#Event .Event-Recently{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+#Event .Event-Recently-Event{
+    position: absolute;
+    text-transform: uppercase ;
+    color: orangered;
+    font-size: 100px;
+    margin-left: 20px;
+    margin-top: -45px;
+}
+#Event-list{
+    display: flex;  
+    margin-top: 50px; 
+    font-size: 20px;
+}
+#Event .Event-website{
+    background-color: white;
+   width: 33%;
+}
+#Event .Event-website-title{
+    margin-top: 15px;
+}
+#Event .Event-YouthCode{  
+    width: 33%;
+    margin-left: 100px;
+ }
+#Event .Event-LearningSeries{
+    background-size: cover;
+    background-color: white;
+    width: 33%;
+    margin-left: -30px;
+    background-size: cover;
+ }
+ #Event .Event-LearningSeries-title{
+    margin-top: 15px;
+ }
+/*============================================================*/
+/* định dạng thẻ div chưa các button tab */
+#function{
+    margin:  100px 50px 200px 50px;
+}
+#function .function-content-plan{
+    color: #db4437;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+}
+#function .function-content-function {
+    letter-spacing: 1px;
+    font-size: 32px;
+    display: block;
+    font-weight: 800;
+}
+#function .function-content-function2{
+    letter-spacing: 1px;
+    font-size: 32px;
+    display: block;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+#function .function-tab{
+    display: flex;
+    height: 100px;
+}
+ /* định dạng các button tab */
+#function #function-tab1{
+    background-color: lightskyblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+#function #function-tab2{
+    background-color: lightsalmon;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+#function #function-tab3{
+    background-color: gold;
+    color: black;
+    text-transform: uppercase;
+    width: 20%;
+}
+#function #function-tab4{
+    background-color: lightgreen;
+    color: black;
+    text-transform: uppercase;
+    width: 20%;
+}
+#function #function-tab5{
+    background-color: blueviolet;
+    text-transform: uppercase;
+    color: black;
+    width: 20%;
+}
+/* đổi màu khi một button tab được hover va active*/
+#function #function-tab1:hover ,#function #function-tab1:focus,#function #function-tab1.active {
+    background-color: darkblue;
+    color: white;
+}
+#function #function-tab2:hover ,#function #function-tab2:focus, #function #function-tab2.active{
+    background-color: red;
+    color: white;
+}
+#function #function-tab3:hover ,#function #function-tab3:focus, #function #function-tab3.active{
+    background-color: orange;
+    color: white;
+}
+#function #function-tab4:hover ,#function #function-tab4:focus, #function #function-tab4.active{
+    background-color: darkgreen;
+    color: white;
+}
+#function #function-tab5:hover ,#function #function-tab5:focus ,#function #function-tab5.active{
+    background-color: darkblue;
+    color: white;
+   
+}
  
+/* định dạng nội dung hiển thị */
+#function .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid red;
+    border-top: none;
+}
+/*============================================================*/
+/*============================================================*/
