@@ -34,8 +34,9 @@
             </div>
             
             <div id = "banner">
-                
+                <canvas id="canvas"></canvas>
                 <div class="banner-content">
+                    
                     <img class="logo-banner" src="./Picture/logoDevup-chinh.png" width="200" height="200" >
                     <p class = "text1-banner">Are you <span class="text11-banner">ready</span> to join us?<p>
                     <h1 class="text2-banner">DevUp Club</h1>
@@ -45,7 +46,6 @@
                         <span class="text33-banner">2</span>
                         <span class="text34-banner">3</span>
                     </h1>
-
                     <h4 class="position-banner">
                     <img src="./Picture/position.jpg" alt="position_icon" width="20" height="20">
                     FPT AI QUY NHON UNIVERSITY
@@ -54,8 +54,10 @@
                     <button class="apply-button">
                         <a style="text-decoration: none" href="https://www.google.com/"> <h3 class="apply-text">Apply here</h3></a>
                     </button>
-
+                   
                 </div>
+                
+                
             </div>
         </div>
 <!-------------------------------------------------------------------------------------->
@@ -290,8 +292,11 @@
         <p>Linkedln</p>
     </div>
 </footer>
+
+<script type="text/javascript" src="fireworks.js"> </script>
 <!-- ------------------------------------------------------------------------------------>
-    </body>
+</body>
+    
 <!-- ------------------------------------------------------------------------------------>
 <!-- tao hieu ung tab khi nhan vao (copy tren mang chu t cũng chua hieu doan nay :((  )-->
 <script type="text/javascript">
