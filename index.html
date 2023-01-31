@@ -244,36 +244,10 @@
                     <h4 >FPTU University of Technology</h4>    
                 </div>
                 <div id="mail-input">
-                    <p class="subcribe-email"> Subcribe and receive our lastest news, events </p>
-                    <form action="index.php" method="POST">
-                    <?php $userEmail = "" ?>
-                    <input type="text" name="email" placeholder="Enter your email" required value="<?php echo $userEmail ?>">
-                    <input type="submit" name="btn-submit" value="Submit">
-                    <?php
-                    if (isset($_POST['btn-submit'])) {
-                        $userEmail = $_POST['email'];
-                        if (filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
-                            $subject = "Cảm ơn đã theo dõi chúng tôi - DevUp";
-                            $message = "Cảm ơn đã theo dõi website câu lạc bộ của chúng tôi. Bạn sẽ luôn nhận được những cập nhật mới nhất từ chúng tôi. Và chúng tôi sẽ không chia sẽ hoặc bán thông tin của bạn tới bất kỳ ai.";
-                            $sender = "From: devup@gmail.com";
-                            if (mail($userEmail, $subject, $message, $sender)) {
-                                ?>
-                                <div class="alert success">Cảm ơn đã theo dõi.</div>
-                                <?php
-                                $userEmail = "";
-                            } else {
-                                ?>
-                                <div class="alert error">Gửi email không thành công.</div>
-                                <?php
-                            }
-                        } else {
-                            ?>
-                            <div class="alert error">Email không đúng định dạng!</div>
-                            <?php
-                        }
-                    }
-                    ?>
-                </form>
+                    <p class="subcribe-mail"> Subcribe and receive our lastest news, events </p>
+                    <input class="mail" value="Enter your mail">
+                    <button class="submit-button"> Submit</button>
+                </div>
             </div>
         </div>
     </div>    
