@@ -19,7 +19,6 @@ s+=`<div id="logPop" style="position:absolute; left:0; top:40px; font: bold 36px
   </div>`
 
 s+='<canvas id="canvasId" width="'+w+'" height="'+h+'" style="z-index:2;"></canvas>'
-s+='<div id="info" style="position:absolute; right:20px; bottom:5px; margin-left: 30px; font: 16px Arial; text-align: center; ">Minimum Moves: 7</div>'
 s+=wrap({cls:'copyrt',style:'left:5px; bottom:3px'},`&copy; 2021 MathsIsFun.com  v${version}`)
 s+='</div>'
 docInsert(s)
