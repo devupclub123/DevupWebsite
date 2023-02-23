@@ -19,7 +19,7 @@ s+=`<div id="logPop" style="position:absolute; left:0; top:40px; font: bold 36px
   </div>`
 
 s+='<canvas id="canvasId" width="'+w+'" height="'+h+'" style="z-index:2;"></canvas>'
-s+=wrap({cls:'copyrt',style:'left:5px; bottom:3px'},`&copy; 2021 MathsIsFun.com  v${version}`)
+s+=wrap({cls:'copyrt',style:'left:5px; bottom:3px'},`&copy; 2023 DevupClub.com`)
 s+='</div>'
 docInsert(s)
 el=document.getElementById('canvasId')
@@ -383,7 +383,6 @@ if(mouse.y>shape.y+shape.ht)return false
 return true}}
 my.theme=localStorage.getItem('theme')
 my.lineClr=my.theme=='dark'?'white':'black'
-my.imgHome=(document.domain=='localhost'?'/mathsisfun':'')+'/numbers/images/'
 my.opts={name:'user'}
 function optGet(name){let val=localStorage.getItem(`mif.${name}`)
 if(val==null)val=my.opts[name]
