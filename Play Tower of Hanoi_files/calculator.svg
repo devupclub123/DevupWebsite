@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2021 mathsisfun.com -->
+<svg xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.8" height="119.6" version="1.1" style="fill:#19aeff; stroke-width:2.05;">
+<defs>
+	<linearGradient id="id3">
+		<stop offset="0" style="stop-color:#005c94; stop-opacity:1;"/>
+		<stop offset="0.641" style="stop-color:#0082d2; stop-opacity:1;"/>
+		<stop offset="1" style="stop-color:#3fb6ff; stop-opacity:1;"/>
+	</linearGradient>
+	<linearGradient id="id2">
+		<stop offset="0" style="stop-color:#8d8d8d; stop-opacity:1;"/>
+		<stop offset="1" style="stop-color:#747474; stop-opacity:1;"/>
+	</linearGradient>
+	<linearGradient id="id1">
+		<stop offset="0" style="stop-color:white; stop-opacity:1;"/>
+		<stop offset="1" style="stop-color:white; stop-opacity:0.79;"/>
+	</linearGradient>
+	<linearGradient id="id5" gradientTransform="matrix(2.31219,0,0,2.84671,-15.0818,-52.7912)" xlink:href="#id1" x1="14.2" y1="5.9" x2="39.1" y2="40.6" gradientUnits="userSpaceOnUse"/>
+	<linearGradient id="id6" gradientTransform="matrix(2.55678,0,0,2.3161,-23.327,-50.0914)" xlink:href="#id2" x1="36.4" y1="38" x2="36.4" y2="40.2" gradientUnits="userSpaceOnUse"/>
+	<linearGradient id="id7" gradientTransform="matrix(2.55678,0,0,2.3161,-23.327,-50.0914)" xlink:href="#id2" x1="36.4" y1="25.4" x2="36.4" y2="26.9" gradientUnits="userSpaceOnUse"/>
+	<linearGradient id="id4" xlink:href="#id3" x1="40.2" y1="66.4" x2="40.2" y2="-43.2" gradientUnits="userSpaceOnUse"/>
+</defs>
+<g transform="translate(1.15455,46.7393)">
+	<rect x="-0" y="-45.6" rx="4.5" ry="5.5" width="85.5" height="117.3" style="display:block; fill:url(#id4); stroke:#343434; stroke-width:2.25;"/>
+	<rect x="6.8" y="-35.5" rx="2" ry="4" width="69.8" height="26.6" style="display:block; fill:#666666;"/>
+	<rect x="2" y="-42.8" rx="2.2" ry="2.7" width="80.9" height="111.7" style="display:block; opacity:0.49; fill:none; stroke:url(#id5); stroke-width:2.25;"/>
+	<rect x="61.6" y="18.5" rx="3.5" ry="3.2" width="16.1" height="25.2" style="font-family:Arial; display:block; fill:url(#id6); stroke:#7d7d7d;"/>
+	<rect x="60.1" y="17" rx="3.5" ry="3.2" width="16.1" height="25.2" style="font-family:Arial; display:block; fill:#0084c8; stroke:#343434;"/>
+	<rect x="61.6" y="-0.5" rx="3.1" ry="2.8" width="16.1" height="14.5" style="font-family:Arial; display:block; fill:url(#id7); stroke:#7d7d7d;"/>
+	<rect x="60.1" y="-1.9" rx="3.1" ry="2.8" width="16.1" height="14.5" style="font-family:Arial; display:block; fill:#0084c8; stroke:#343434;"/>
+	<path style="font-weight:bold; fill:#b8b8b8; stroke-width:2.05pt;" d="m 68.8,26.5 v 2.8 h 2.8 v 1.3 h -2.8 v 2.8 H 67.6 V 30.6 h -2.8 v -1.3 h 2.8 v -2.8 h 1.3"/>
+	<path style="font-weight:bold; fill:#b8b8b8; stroke-width:2.05pt;" d="m 66.7,4.4 h 3.4 V 6 h -3.4 V 4.4"/>
+	<g id="id9" style="stroke-width:0.89;" transform="matrix(1.12834,0,0,1.12733,-137.908,-34.7758)">
+		<g id="id8" style="stroke-width:0.89;" transform="translate(3.5,3)">
+			<rect x="127.7" y="27.4" rx="2.1" ry="2.1" width="10.6" height="10.5" style="font-family:Arial; display:block; stroke:#707070; stroke-width:1.82;"/>
+			<rect x="127.1" y="26.8" rx="2.1" ry="2.1" width="10.6" height="10.5" style="font-family:Arial; display:block; stroke:#343434; stroke-width:1.82;"/>
+		</g>
+		<use transform="translate(14.5)" xlink:href="#id8" x="0" y="0"/>
+		<use transform="translate(29)" xlink:href="#id8" x="0" y="0"/>
+	</g>
+	<use transform="translate(0,16.3463)" xlink:href="#id9" x="0" y="0"/>
+	<use transform="translate(0,32.6927)" xlink:href="#id9" x="0" y="0"/>
+	<use transform="translate(0,49.039)" xlink:href="#id9" x="0" y="0"/>
+	<g style="stroke-width:0.89;" transform="matrix(1.12834,0,0,1.12733,-132.831,44.4194)">
+		<rect x="170.7" y="3.7" rx="2.1" ry="2.1" width="10.6" height="10.5" style="font-family:Arial; display:block; stroke:#707070; stroke-width:1.82;"/>
+		<rect x="170.1" y="3.1" rx="2.1" ry="2.1" width="10.6" height="10.5" style="font-family:Arial; display:block; stroke:#343434; stroke-width:1.82;"/>
+	</g>
+	<text x="24.1" y="-20.4" transform="scale(1.05003,0.952352)" style="font-family:Arial; font-weight:bold; font-size:18.3px; fill:white; stroke-width:1px;">2+2</text>
+</g>
+</svg>
