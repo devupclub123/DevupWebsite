@@ -13,21 +13,11 @@ my.poleY=240
 my.drag={type:'block',q:false,n:0,hold:{x:0,y:0}}
 my.moves=[]
 var s=''
-s+='<div style="position:relative; width:'+w+'px; height:'+h+'px;  margin:auto; display:block; border: none;  border-radius: 10px; box-shadow: 0px 0px 19px 10px rgba(0,0,68,0.46); ">'
-s+='<div id="btns0" style="position:absolute; left:5px; top:3px;">'
-s+='<span style="font: 20px Arial; text-align: center; ">Disks: </span>'
-s+=wrap({id:'num',tag:'out',style:'width:40px;'},'3')
-s+='<button id="dnBtn" style="margin:0 0 0 2px; font-size: 16px;  " class="btn"  onclick="numDn()" >&#x25BC;</button>'
-s+='<button id="upBtn" style="margin:0;  font-size: 16px;  " class="btn"  onclick="numUp()" >&#x25B2;</button>'
-s+='<span id="moves" style="text-align: center; margin-left: 15px; font: bold 20px Arial; color: blue; ">Moves: 0</span>'
-s+='<button style="margin-left: 20px; " class="btn"  onclick="gameNew()" >Restart</button>'
-s+='<button style="margin-left: 2px; " class="btn"  onclick="logOpen()" >Log</button>'
 s+='</div>'
 s+=`<div id="logPop" style="position:absolute; left:0; top:40px; font: bold 36px Arial; text-align: center; color: gold;">
-  <textarea id="log" style="width:400px; height:200px;"></textarea>
+
   </div>`
-s+='<div id="disks" style="position:absolute; left:0; top:0;">YO!</div>'
-s+='<div id="success" style="position:absolute; left:0; top:40px; width:'+w+'px; font: bold 36px Arial; text-align: center; color: gold;">Well Done !</div>'
+
 s+='<canvas id="canvasId" width="'+w+'" height="'+h+'" style="z-index:2;"></canvas>'
 s+='<div id="info" style="position:absolute; right:20px; bottom:5px; margin-left: 30px; font: 16px Arial; text-align: center; ">Minimum Moves: 7</div>'
 s+=wrap({cls:'copyrt',style:'left:5px; bottom:3px'},`&copy; 2021 MathsIsFun.com  v${version}`)
