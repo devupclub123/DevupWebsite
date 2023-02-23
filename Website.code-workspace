@@ -1,10 +1,15 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "liveServer.settings.multiRootWorkspaceName": "FileOfJS"
-    }
+	"folders": [
+		{
+			"name": "Website",
+			"path": "."
+		},
+		{
+			"name": "FileOfJS",
+			"path": "..\\..\\FileOfJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Website"
+	}
 }
