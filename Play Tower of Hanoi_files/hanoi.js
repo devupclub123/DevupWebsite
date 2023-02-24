@@ -866,7 +866,7 @@ function wrap(
     return s.trim();
 }
 init();
-// function timeCounter(finalNumber, delay, startNumber = 0, callback) {
+// function timer(finalNumber, delay, startNumber = 0, callback) {
 //     let currentNumber = startNumber
 //     const interval = window.setInterval(updateNumber, delay)
 //     function updateNumber() {
@@ -878,11 +878,11 @@ init();
 //         callback(currentNumber)
 //     }
 // }
-// timeCounter(98, 1000, 0, function (number) {
+// timer(98, 1000, 0, function (number) {
 //     const formattedNumber = parseInt(number / 60) + ':' + (number % 60)
-//     document.getElementById('timeCounter').innerText = formattedNumber
+//     document.getElementById('timer').innerText = formattedNumber
 // })
-var counter = 0;
+var counter = 5 * 60;
 setInterval(function () {
     counter--;
     if (counter >= 0) {
