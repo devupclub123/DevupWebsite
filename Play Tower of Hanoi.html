@@ -1,194 +1,58 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)https://www.mathsisfun.com/games/towerofhanoi.html -->
-<html lang="en" theme="lite"><!-- #BeginTemplate "/Templates/Main.dwt" --><!-- DW6 --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" theme="dark"><!-- #BeginTemplate "/Templates/Main.dwt" --><!-- DW6 -->
 
-<!-- #BeginEditable "doctitle" -->
-<title>Tháp Hà Nội</title>
-<meta name="description" content="">	
-<!-- #EndEditable -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="HandheldFriendly" content="true">
-<meta name="referrer" content="always">
-	<link rel="preload" href="https://www.mathsisfun.com/images/style/font-champ-bold.ttf" as="font" type="font/ttf" crossorigin="">
-	<link rel="preload" href="./Play Tower of Hanoi_files/style4.css" as="style">
-	<link rel="preload" href="./Play Tower of Hanoi_files/main4.js" as="script">
-<link rel="stylesheet" href="./Play Tower of Hanoi_files/style4.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="./Play Tower of Hanoi_files/js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-29771508-1');
-</script>
-<style>.--savior-overlay-transform-reset {
-  transform: none !important;
-}
-.--savior-overlay-z-index-top {
-  z-index: 2147483643 !important;
-}
-.--savior-overlay-position-relative {
-  position: relative;
-}
-.--savior-overlay-overflow-x-visible {
-  overflow-x: visible !important;
-}
-.--savior-overlay-overflow-y-visible {
-  overflow-y: visible !important;
-}
-.--savior-overlay-z-index-reset {
-  z-index: auto !important;
-}
-.--savior-overlay-display-none {
-  display: none !important;
-}
-.--savior-overlay-clearfix {
-  clear: both;
-}
-.--savior-overlay-reset-filter {
-  filter: none !important;
-  backdrop-filter: none !important;
-}
-.--savior-tooltip-host {
-  z-index: 9999;
-  position: absolute;
-  top: 0;
-}
-/*Override css styles for Twitch.tv*/
-main.--savior-overlay-z-index-reset {
-  z-index: auto !important;
-}
-main.--savior-overlay-z-index-top {
-  z-index: auto !important;
-}
-main.--savior-overlay-z-index-top .channel-root__player-container + div,
-main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
-  opacity: 0.1;
-}
-/*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
-.--savior-backdrop {
-  position: fixed !important;
-  z-index: 2147483642 !important;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw !important;
-  background-color: rgba(0,0,0,0.9);
-}
-.--savior-overlay-twitter-video-player {
-  position: fixed;
-  width: 80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
-}
-/* Fix conflict css with zingmp3 */
-.zm-video-modal.--savior-overlay-z-index-reset {
-  position: absolute;
-}
-/* Dirty hack for xvideos99 */
-#page #main.--savior-overlay-z-index-reset {
-  z-index: auto !important;
-}
-/* Overlay for ok.ru */
-#vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
-  position: absolute;
-  overflow-y: hidden;
-}
-/* Fix missing controller for tv.naver.com */
-.--savior-overlay-z-index-top.rmc_controller,
-.--savior-overlay-z-index-top.rmc_setting_intro,
-.--savior-overlay-z-index-top.rmc_highlight,
-.--savior-overlay-z-index-top.rmc_control_settings {
-  z-index: 2147483644 !important;
-}
-/* Dirty hack for douyi.com */
-.swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
-.swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
-  display: none;
-}
-.videoWrap + div > div {
-  pointer-events: unset;
-}
-/* Dirty hack for fpt.ai */
-.mfp-wrap.--savior-overlay-z-index-top {
-  position: relative;
-}
-.mfp-wrap.--savior-overlay-z-index-top .mfp-close {
-  display: none;
-}
-.mfp-wrap.--savior-overlay-z-index-top .mfp-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
-  z-index: -1 !important;
-}
-section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
-  position: relative;
-}
-div[class^="tiktok"].--savior-overlay-z-index-reset {
-  z-index: 2147483644 !important;
-}
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-</style></head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- #BeginEditable "doctitle" -->
+    <title>Tháp Hà Nội</title>
+    <!-- #EndEditable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="referrer" content="always">
+    <link rel="preload" href="https://www.mathsisfun.com/images/style/font-champ-bold.ttf" as="font" type="font/ttf" crossorigin="">
+    <link rel="preload" href="./Play Tower of Hanoi_files/style4.css" as="style">
+    <link rel="preload" href="./Play Tower of Hanoi_files/main4.js" as="script">
+    <link rel="stylesheet" href="./Play Tower of Hanoi_files/style4.css">
+</head>
 
 <body id="bodybg" style="cursor: default;">
-
-	</header>
-	
-	<div class="mid">
-
-	
-	<div id="extra"></div>
-
-<article id="content" role="main">
-
-<!-- #BeginEditable "Body" -->
-<script>Author='Rod Pierce';</script>
-
-<h1 class="center">Tháp Hà Nội</h1>
-
-<div class="center">Mục tiêu của trò chơi là di chuyển toàn bộ các đĩa đến cọc 3.
-  Người chơi chỉ được di chuyển một đĩa mỗi lần và không được đặt đĩa lớn hơn lên đĩa nhỏ hơn. </div><br>
-<div><div style="position:relative; width:510px; height:320px;  margin:auto; display:block; border: none;  border-radius: 10px; box-shadow: 0px 0px 19px 10px rgba(0,0,68,0.46); "><div id="btns0" style="position:absolute; left:5px; top:3px;"><span style="font: 20px Arial; text-align: center; ">Disks: </span><span id="num" class="output" style="position:relative; display:inline-block;width:40px;">3</span><button id="dnBtn" style="margin:0 0 0 2px; font-size: 16px;  " class="btn" onclick="numDn()">▼</button><button id="upBtn" style="margin:0;  font-size: 16px;  " class="btn" onclick="numUp()">▲</button><span id="moves" style="text-align: center; margin-left: 15px; font: bold 20px Arial; color: blue; ">Moves: 0</span><button style="margin-left: 20px; " class="btn" onclick="gameNew()">Restart</button><button style="margin-left: 2px; " class="btn" onclick="logOpen()">Log</button></div><div id="logPop" style="position: absolute; left: -450px; top: 10px; width: auto; padding: 5px; border-radius: 9px; background-color: rgb(136, 170, 255); box-shadow: rgba(40, 40, 40, 0.75) 10px 10px 5px 0px; transition: all 0.3s linear 0s; opacity: 0; text-align: center;">
-  <textarea id="log" style="width:400px; height:200px;"></textarea>
-  <div></div><button class="togglebtn" style="font: 22px Arial;">✔</button></div><div id="disks" style="position:absolute; left:0; top:0;"><div style="position: absolute; pointer-events: none; transition-duration: 0s; left: 69px; top: 181.6px;"><canvas width="84" height="50" style="position: absolute; width: 42px; height: 25px; z-index: 2;"></canvas><canvas width="84" height="50" style="position: absolute; width: 42px; height: 25px; z-index: 1;"></canvas></div><div style="position: absolute; pointer-events: none; transition-duration: 0s; left: 60.5px; top: 198.6px;"><canvas width="118" height="50" style="position: absolute; width: 59px; height: 25px; z-index: 2;"></canvas><canvas width="118" height="50" style="position: absolute; width: 59px; height: 25px; z-index: 1;"></canvas></div><div style="position: absolute; pointer-events: none; transition-duration: 0s; left: 52px; top: 215.6px;"><canvas width="152" height="50" style="position: absolute; width: 76px; height: 25px; z-index: 2;"></canvas><canvas width="152" height="50" style="position: absolute; width: 76px; height: 25px; z-index: 1;"></canvas></div></div><div id="success" style="position:absolute; left:0; top:40px; width:510px; font: bold 36px Arial; text-align: center; color: gold;"></div><canvas id="canvasId" width="1020" height="640" style="z-index: 2; width: 510px; height: 320px;"></canvas><div id="info" style="position:absolute; right:20px; bottom:5px; margin-left: 30px; font: 16px Arial; text-align: center; ">Minimum Moves: 7</div><div class="copyrt" style="position:relative; left:5px; bottom:3px"></div></div></div><script src="./Play Tower of Hanoi_files/hanoi.js"></script><br>
-<!-- #EndEditable -->
-</article>
-<footer ></footer>
-</div>
+    <article id="content" role="main">
+        <!-- #BeginEditable "Body" -->
+        <div style="width: 510px; height: 135px; margin: 0 auto;">
+            <h1 class="center" style="margin-top: 65px;">Tháp Hà Nội</h1>
+            <div class="center">
+                Mục tiêu của trò chơi là di chuyển toàn bộ các đĩa đến cọc 3.
+                <br>
+                Người chơi chỉ được di chuyển một đĩa mỗi lần và không được đặt đĩa lớn hơn lên đĩa nhỏ hơn.
+            </div>
+        </div>
+        <br>
+        <div>
+            <div style="position: relative; width: 510px; height: 320px; margin: auto; display: block; border: none; border-radius: 10px; box-shadow: 0px 0px 19px 10px rgba(0,0,68,0.46); ">
+                <div id="btns0" style="position: absolute; left: 8px; top: 3px;">
+                    <span style="font: 18px Arial; text-align: center; ">Số đĩa: </span
+                    ><span id="num" class="output" style="position:relative; display:inline-block;width:40px;">3</span
+                    ><button id="dnBtn" style="margin:0; font-size: 16px;" class="btn" onclick="numDn()">▼</button
+                    ><button id="upBtn" style="margin:0;  font-size: 16px;" class="btn" onclick="numUp()">▲</button>
+                    <span id="moves" style="text-align: center; margin-left: 7px; font: bold 18px Arial; color: blue; ">Số lần di chuyển: 0</span>
+                </div>
+                <button style="position: absolute; right:8px; top: 7px;" class="btn" onclick="gameNew()">Bắt đầu lại</button>
+                <div id="disks" style="position: absolute; left: 0; top: 0;"></div>
+                <div id="success" style="position: absolute; left:0; top: 25px; width: 510px; height: 0; font: bold 36px Arial; text-align: center; color: gold;"></div>
+                <canvas id="canvasId" width="1020" height="640" style="z-index: 2; width: 510px; height: 320px;"></canvas>
+                <div id="info" style="position: absolute; right: 10px; bottom: 8px; font: 16px Arial; text-align: center;">
+                    Số lần di chuyển tối thiểu: 7
+                </div>
+                <div id="timer" style="position: absolute; left: 10px; bottom: 8px; font: 16px Arial; text-align: center;">
+                    Thời gian: 00:00
+                </div>
+            </div>
+        </div>
+        <script src="./Play Tower of Hanoi_files/hanoi.js"></script><br>
+        <!-- #EndEditable -->
+    </article>
+    <div id="copyrt" style="position: fixed; bottom: 5px; right: 10px;">Copyright © 2023 DevUpClub.com</div>
+</body>
 </html>
