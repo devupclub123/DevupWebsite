@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)https://www.mathsisfun.com/games/towerofhanoi.html -->
-<html lang="en" theme="dark"><!-- #BeginTemplate "/Templates/Main.dwt" --><!-- DW6 -->
+<html lang="en" theme="lite"><!-- #BeginTemplate "/Templates/Main.dwt" --><!-- DW6 -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,7 +20,7 @@
 <body id="bodybg" style="cursor: default;">
     <article id="content" role="main">
         <!-- #BeginEditable "Body" -->
-        <div style="width: 510px; height: 135px; margin: 0 auto;">
+        <div style="width: 510px; height: 145px; margin: 0 auto;">
             <h1 class="center" style="margin-top: 65px;">Tháp Hà Nội</h1>
             <div class="center">
                 Mục tiêu của trò chơi là di chuyển toàn bộ các đĩa đến cọc 3.
@@ -33,20 +33,25 @@
             <div style="position: relative; width: 510px; height: 320px; margin: auto; display: block; border: none; border-radius: 10px; box-shadow: 0px 0px 19px 10px rgba(0,0,68,0.46); ">
                 <div id="btns0" style="position: absolute; left: 8px; top: 3px;">
                     <span style="font: 18px Arial; text-align: center; ">Số đĩa: </span
-                    ><span id="num" class="output" style="position:relative; display:inline-block;width:40px;">3</span
-                    ><button id="dnBtn" style="margin:0; font-size: 16px;" class="btn" onclick="numDn()">▼</button
-                    ><button id="upBtn" style="margin:0;  font-size: 16px;" class="btn" onclick="numUp()">▲</button>
-                    <span id="moves" style="text-align: center; margin-left: 7px; font: bold 18px Arial; color: blue; ">Số lần di chuyển: 0</span>
+                    ><span id="num" class="output" style="position: relative; display: inline-block; width: 40px;">3</span
+                    ><button id="dnBtn" style="margin: 0; font-size: 16px;" class="btn" onclick="numDn()">▼</button
+                    ><button id="upBtn" style="margin: 0; font-size: 16px;" class="btn" onclick="numUp()">▲</button>
+                    <span id="moves" style="text-align: center; margin-left: 17px; font: bold 18px Arial; color: blue; ">
+                        Số lần di chuyển: 0
+                    </span>
                 </div>
-                <button style="position: absolute; right:8px; top: 7px;" class="btn" onclick="gameNew()">Bắt đầu lại</button>
+                <button style="position: absolute; right:8px; top: 7px;" class="btn" onclick="gameNew()">Chơi lại</button>
                 <div id="disks" style="position: absolute; left: 0; top: 0;"></div>
-                <div id="success" style="position: absolute; left:0; top: 25px; width: 510px; height: 0; font: bold 36px Arial; text-align: center; color: gold;"></div>
+                <div id="success" style="position: absolute; left: 0; top: 25px; width: 510px; height: 0; font: bold 36px Arial; text-align: center; color: gold;"></div>
+                <div id="timeOut" style="position: absolute; left: 0; top: 25px; width: 510px; height: 0; font: bold 36px Arial; text-align: center; color: red;"></div>
                 <canvas id="canvasId" width="1020" height="640" style="z-index: 2; width: 510px; height: 320px;"></canvas>
-                <div id="info" style="position: absolute; right: 10px; bottom: 8px; font: 16px Arial; text-align: center;">
-                    Số lần di chuyển tối thiểu: 7
-                </div>
-                <div id="timer" style="position: absolute; left: 10px; bottom: 8px; font: 16px Arial; text-align: center;">
-                    Thời gian: 00:00
+                <div style="position: relative;">
+                    <div id="timer" style="position: absolute; bottom: 12px; left: 50%; transform: translate(-50%, 0); font: bold 20px Arial; text-align: center; color: blue">
+                        Thời gian: 00:30
+                    </div>
+                    <!-- <div id="info" style="position: absolute; right: 10px; bottom: 12px; font: 16px Arial; text-align: center;">
+                        Số lần di chuyển tối thiểu: 7
+                    </div>                    -->
                 </div>
             </div>
         </div>
