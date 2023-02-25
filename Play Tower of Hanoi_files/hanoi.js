@@ -3,7 +3,7 @@ var el,
     ratio,
     shapes,
     my = {};
-    duration = 10;
+    duration = 15;
     display = document.querySelector('#timer');
     isEnd = false;
 function init(mode, rel) {
@@ -140,6 +140,7 @@ function gameNew() {
     my.logStt = performance.now();
     resetCountdown(duration, display);
     isFirstTouchStart = true;
+    isEnd = false;
     // document.getElementById("info").innerHTML =
     //     "Số lần di chuyển tối thiểu: " + ((1 << my.diskTot) - 1).toString();
 }
@@ -343,7 +344,9 @@ function doDrop(dropNo) {
                 p +
                 "\n";
             moveNChg(1);
-            disk.pole = p;
+            if (!isEnd) {
+                disk.pole = p;
+            }
         }
     }
     disksToPoles();
