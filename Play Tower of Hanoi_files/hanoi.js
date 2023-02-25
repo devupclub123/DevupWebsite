@@ -3,7 +3,6 @@ var el,
     ratio,
     shapes,
     my = {};
-    duration = 5*60;
     display = document.querySelector('#timer');
     isEnd = false;
 function init(mode, rel) {
@@ -138,7 +137,7 @@ function gameNew() {
     timeOutTest();
     my.log = "";
     my.logStt = performance.now();
-    resetCountdown(duration, display);
+    resetCountdown(display);
     isFirstTouchStart = true;
     isEnd = false;
     // document.getElementById("info").innerHTML =
@@ -242,7 +241,7 @@ function mouseDown(evt) {
             if (topDiskQ(i)) {
                 if (!isEnd) {
                     if (isFirstTouchStart) {
-                        countdown(duration, display);
+                        countdown(display);
                         isFirstTouchStart = false;
                     }
                     my.dragStt = performance.now();
@@ -887,20 +886,15 @@ function wrap(
     return s.trim();
 }
 var interval;
-var isRunning = false;
-function countdown(duration, display) {
-    var timer = duration-1, minutes, seconds;
+function countdown(display) {
+    var timer = 1, minutes, seconds;
     interval = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = "Thời gian: " + minutes + ":" + seconds;
-        if (--timer < 0) {
-            document.getElementById("timeOut").innerHTML = "Hết thời gian!";
-            stopCountDown();
-            isEnd = true;
-        }
+        timer++
     }, 1000);
     isRunning = true;
 }
@@ -908,14 +902,10 @@ function stopCountDown() {
     clearInterval(interval);
     isRunning = false;
 }
-function resetCountdown(duration, display) {
+function resetCountdown(display) {
     clearInterval(interval);
     isRunning = false;
-    timer = duration;
-    var minutes = parseInt(timer / 60, 10);
-    var seconds = parseInt(timer % 60, 10);
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    display.textContent = "Thời gian: " + minutes + ":" + seconds;
+    timer = 1;
+    display.textContent = "Thời gian: 00:00";
 }
 init();
