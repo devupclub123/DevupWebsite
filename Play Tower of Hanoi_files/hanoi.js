@@ -3,7 +3,7 @@ var el,
     ratio,
     shapes,
     my = {};
-    duration = 15;
+    duration = 5*60;
     display = document.querySelector('#timer');
     isEnd = false;
 function init(mode, rel) {
