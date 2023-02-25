@@ -517,6 +517,18 @@ html, body {
     left: 300px;
     bottom: 180px;
 }
+@media only screen and (max-width : 450px ) {
+    #Event .Event-Recently-Event{
+        position: relative;
+        text-transform: uppercase ;
+        
+        font-size: 150px;
+        margin-left: 200px;
+        margin-top: -45px;
+        left: 300px;
+        bottom: 180px;
+    }
+}
 #Event-list{
     display: flex;  
     margin-top: 50px; 

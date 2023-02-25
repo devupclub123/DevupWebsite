@@ -3,6 +3,9 @@ var el,
     ratio,
     shapes,
     my = {};
+    duration = 10;
+    display = document.querySelector('#timer');
+    isEnd = false;
 function init(mode, rel) {
     var version = "0.936";
     this.mode = typeof mode !== "undefined" ? mode : "asc";
@@ -132,10 +135,13 @@ function gameNew() {
     g.clearRect(0, 0, g.canvas.width, g.canvas.height);
     drawPoles();
     successTest();
+    timeOutTest();
     my.log = "";
     my.logStt = performance.now();
-    document.getElementById("info").innerHTML =
-        "Số bước tối thiểu: " + ((1 << my.diskTot) - 1).toString();
+    resetCountdown(duration, display);
+    isFirstTouchStart = true;
+    // document.getElementById("info").innerHTML =
+    //     "Số lần di chuyển tối thiểu: " + ((1 << my.diskTot) - 1).toString();
 }
 function disksMake() {
     var div = document.getElementById("disks");
@@ -212,6 +218,7 @@ function doPointer(e) {
         document.body.style.cursor = "default";
     }
 }
+var isFirstTouchStart = true
 function mouseDown(evt) {
     var i;
     var bRect = el.getBoundingClientRect();
@@ -232,13 +239,19 @@ function mouseDown(evt) {
         );
         if (hitTest(shape, mouseX, mouseY)) {
             if (topDiskQ(i)) {
-                my.dragStt = performance.now();
-                my.drag.q = true;
-                console.log("asd", my.drag, shape);
-                my.drag.hold.x = mouseX - shape.x;
-                my.drag.hold.y = mouseY - shape.y;
-                my.drag.n = i;
-                my.disks[my.drag.n].hilite(true);
+                if (!isEnd) {
+                    if (isFirstTouchStart) {
+                        countdown(duration, display);
+                        isFirstTouchStart = false;
+                    }
+                    my.dragStt = performance.now();
+                    my.drag.q = true;
+                    console.log("asd", my.drag, shape);
+                    my.drag.hold.x = mouseX - shape.x;
+                    my.drag.hold.y = mouseY - shape.y;
+                    my.drag.n = i;
+                    my.disks[my.drag.n].hilite(true);
+                }
             }
         }
     }
@@ -338,10 +351,15 @@ function doDrop(dropNo) {
     console.log("my.poles", my.poles);
     successTest();
 }
+function timeOutTest() {
+    document.getElementById("timeOut").innerHTML = "";
+}
 function successTest() {
     document.getElementById("success").innerHTML = "";
     if (isSuccess()) {
         successDo();
+        stopCountDown();
+        isEnd = true
     }
 }
 function isSuccess() {
@@ -803,9 +821,9 @@ function wrap(
     if (id.length > 0) s += ' id="' + id + '"';
     if (cls.length > 0) s += ' class="' + cls + '"';
     if (pos == "dib")
-        s += ' style="position:relative; display:inline-block;' + style + '"';
-    if (pos == "rel") s += ' style="position:relative; ' + style + '"';
-    if (pos == "abs") s += ' style="position:absolute; ' + style + '"';
+        s += ' style="position: relative; display: inline-block;' + style + '"';
+    if (pos == "rel") s += ' style="position: relative; ' + style + '"';
+    if (pos == "abs") s += ' style="position: absolute; ' + style + '"';
     s +=
         {
             btn: () => ">" + txt + "</button>",
@@ -865,37 +883,36 @@ function wrap(
     s += "\n";
     return s.trim();
 }
+var interval;
+var isRunning = false;
+function countdown(duration, display) {
+    var timer = duration-1, minutes, seconds;
+    interval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = "Thời gian: " + minutes + ":" + seconds;
+        if (--timer < 0) {
+            document.getElementById("timeOut").innerHTML = "Hết thời gian!";
+            stopCountDown();
+            isEnd = true;
+        }
+    }, 1000);
+    isRunning = true;
+}
+function stopCountDown() {
+    clearInterval(interval);
+    isRunning = false;
+}
+function resetCountdown(duration, display) {
+    clearInterval(interval);
+    isRunning = false;
+    timer = duration;
+    var minutes = parseInt(timer / 60, 10);
+    var seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = "Thời gian: " + minutes + ":" + seconds;
+}
 init();
-// function timer(finalNumber, delay, startNumber = 0, callback) {
-//     let currentNumber = startNumber
-//     const interval = window.setInterval(updateNumber, delay)
-//     function updateNumber() {
-//         if (currentNumber >= finalNumber) {
-//             clearInterval(interval)
-//         } else {
-//             currentNumber++
-//         }
-//         callback(currentNumber)
-//     }
-// }
-// timer(98, 1000, 0, function (number) {
-//     const formattedNumber = parseInt(number / 60) + ':' + (number % 60)
-//     document.getElementById('timer').innerText = formattedNumber
-// })
-var counter = 5 * 60;
-setInterval(function () {
-    counter--;
-    if (counter >= 0) {
-        span = document.getElementById('timer');
-        var time = new Date(counter*1000);
-        var m = time.getMinutes();
-        m = m<10?'0'+m:m;
-        var s = time.getSeconds();
-        s = s<10?'0'+s:s;
-        span.innerHTML = 'Thời gian: ' + m + ':' + s;
-    }
-    if (counter === 0) {
-        alert('Hết thời gian!');
-        clearInterval(counter);
-    }
-}, 1000);
