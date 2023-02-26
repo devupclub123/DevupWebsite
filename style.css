@@ -56,10 +56,9 @@ html, body {
 #header .header-menu{
     display: block;
     text-transform: uppercase;
-   
     list-style-type: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
    
 #header .header-menu{
     display: none;
