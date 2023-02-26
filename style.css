@@ -59,7 +59,12 @@ html, body {
    
     list-style-type: none;
 }
-
+@media screen and (max-width: 700px) {
+   
+#header .header-menu{
+    display: none;
+}
+}
 #header .header-menu a:hover {
     color: black;
     background-color: #ccc;
